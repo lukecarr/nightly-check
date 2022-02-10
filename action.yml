@@ -1,3 +1,7 @@
+author: "Luke Carr"
+branding:
+  icon: moon
+  color: gray-dark
 description: "Checks for Git changes since the last nightly CI job (24 hrs)"
 name: "Nightly Check"
 outputs: 
