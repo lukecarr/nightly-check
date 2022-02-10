@@ -1,8 +1,6 @@
-# Nightly Check
+🌓 GitHub action that checks for changes between nightly CI jobs
 
-🤖 GitHub action that checks for changes between nightly CI jobs
-
-## Example Usage
+### Example Usage
 
 > This example is taken directly from [moducate/moducate](https://github.com/moducate/moducate)'s [nightly-docker](https://github.com/moducate/moducate/blob/main/.github/workflows/nightly-docker.yml) GitHub action.
 
