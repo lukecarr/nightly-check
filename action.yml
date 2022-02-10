@@ -1,0 +1,17 @@
+name: 'Nightly Check'
+description: 'Checks for Git changes since the last nightly CI job (24 hrs)'
+
+outputs:
+  changes:
+    description: 'True if changes have been made in the past 24 hrs, otherwise false'
+    value: ${{ steps.check-changes.outputs.changes }}
+
+runs:
+  using: 'composite'
+  steps:
+    - uses: 'actions/checkout@v2'
+
+    - id: 'check-changes'
+      continue-on-error: true
+      name: 'check if latest commit is within 24 hrs'
+      run: 'test -z $(git rev-list --after="24 hours" ${{ github.sha }}) && echo "::set-output name=changes::true"'
