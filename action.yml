@@ -11,7 +11,7 @@ outputs:
 runs: 
   steps: 
     - 
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - 
       continue-on-error: true
       id: check-changes
