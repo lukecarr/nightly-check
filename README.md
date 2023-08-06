@@ -2,10 +2,8 @@
 
 ### Example Usage
 
-> This example is taken directly from [moducate/moducate](https://github.com/moducate/moducate)'s [nightly-docker](https://github.com/moducate/moducate/blob/main/.github/workflows/nightly-docker.yml) GitHub action.
-
 ```yml
-name: "Nightly Docker Image"
+name: "Nightly Build"
 
 on:
   schedule:
@@ -17,7 +15,7 @@ jobs:
     steps:
       - id: nightly-check
         name: Check for changes since last nightly
-        uses: lukecarr/nightly-check@v0.1.0
+        uses: lukecarr/nightly-check@v0.2.0
 
   nightly:
     runs-on: ubuntu-latest
