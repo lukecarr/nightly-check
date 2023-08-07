@@ -17,5 +17,5 @@ runs:
       shell: bash
       id: check-changes
       name: "check if latest commit is within 24 hrs"
-      run: "test -z $(git rev-list --after=\"24 hours\" ${{ github.sha }}) && echo \"::set-output name=changes::true\""
+      run: "test -z $(git rev-list --after=\"24 hours\" ${{ github.sha }}) && echo \"changes=true\" >> $GITHUB_OUTPUT"
   using: composite
