@@ -1,0 +1,26 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "ShiriNmi1520",
+      "name": "Y.C.Huang",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33322926?v=4",
+      "profile": "https://shirinmi1520.github.io/",
+      "contributions": [
+        "bug"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "nightly-check",
+  "projectOwner": "lukecarr"
+}
