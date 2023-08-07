@@ -57,6 +57,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://shirinmi1520.github.io/"><img src="https://avatars.githubusercontent.com/u/33322926?v=4?s=100" width="100px;" alt="Y.C.Huang"/><br /><sub><b>Y.C.Huang</b></sub></a><br /><a href="https://github.com/lukecarr/nightly-check/issues?q=author%3AShiriNmi1520" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.carr.sh"><img src="https://avatars.githubusercontent.com/u/24438483?v=4?s=100" width="100px;" alt="Luke Carr"/><br /><sub><b>Luke Carr</b></sub></a><br /><a href="https://github.com/lukecarr/nightly-check/commits?author=lukecarr" title="Code">💻</a> <a href="https://github.com/lukecarr/nightly-check/commits?author=lukecarr" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
