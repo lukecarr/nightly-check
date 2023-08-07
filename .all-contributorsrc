@@ -5,17 +5,8 @@
   "imageSize": 100,
   "commit": false,
   "commitType": "docs",
-  "commitConvention": "angular",
+  "commitConvention": "gitmoji",
   "contributors": [
-    {
-      "login": "ShiriNmi1520",
-      "name": "Y.C.Huang",
-      "avatar_url": "https://avatars.githubusercontent.com/u/33322926?v=4",
-      "profile": "https://shirinmi1520.github.io/",
-      "contributions": [
-        "bug"
-      ]
-    },
     {
       "login": "lukecarr",
       "name": "Luke Carr",
@@ -24,6 +15,15 @@
       "contributions": [
         "code",
         "doc"
+      ]
+    },
+    {
+      "login": "ShiriNmi1520",
+      "name": "Y.C.Huang",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33322926?v=4",
+      "profile": "https://shirinmi1520.github.io/",
+      "contributions": [
+        "bug"
       ]
     }
   ],
