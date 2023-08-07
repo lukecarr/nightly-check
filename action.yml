@@ -4,9 +4,14 @@ branding:
   color: gray-dark
 description: "Checks for Git changes since the last nightly CI job (24 hrs)"
 name: "Nightly Check"
+inputs:
+  within:
+    description: "The duration to look back at for changes, defaults to '24 hrs'"
+    required: false
+    default: "24 hrs"
 outputs: 
   changes: 
-    description: "True if changes have been made in the past 24 hrs, otherwise false"
+    description: "True if changes have been made in the past 24 hrs (or the \"within\" input if provided), otherwise false"
     value: "${{ steps.check-changes.outputs.changes }}"
 runs: 
   steps: 
@@ -17,5 +22,5 @@ runs:
       shell: bash
       id: check-changes
       name: "check if latest commit is within 24 hrs"
-      run: "test -z $(git rev-list --after=\"24 hours\" ${{ github.sha }}) && echo \"changes=true\" >> $GITHUB_OUTPUT"
+      run: "test -z $(git rev-list --after=\"${{ github.event.inputs.within }}\" ${{ github.sha }}) && echo \"changes=true\" >> $GITHUB_OUTPUT"
   using: composite
