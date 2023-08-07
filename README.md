@@ -26,3 +26,22 @@ jobs:
 ```
 
 In the above example, we declare the `check` job which runs this action. The `nightly` job will then subsequently run **if** no changes have been made to the repository in the past 24 hours.
+
+### Custom duration
+
+If you want to look for changes within a duration different to the default (24 hours), you can configure the `within` input parameter in the action:
+
+```yml
+...
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - id: nightly-check
+        name: Check for changes in last two days
+        uses: lukecarr/nightly-check@v0.2.0
+        with:
+          within: 48 hrs
+...
+```
