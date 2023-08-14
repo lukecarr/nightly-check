@@ -12,6 +12,8 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
+    outputs:
+      changes: ${{ steps.nightly-check.outputs.changes }}
     steps:
       - id: nightly-check
         name: Check for changes since last nightly
