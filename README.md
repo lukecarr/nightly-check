@@ -12,6 +12,8 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
+    outputs:
+      changes: ${{ steps.nightly-check.outputs.changes }}
     steps:
       - id: nightly-check
         name: Check for changes since last nightly
@@ -37,9 +39,11 @@ If you want to look for changes within a duration different to the default (24 h
 jobs:
   check:
     runs-on: ubuntu-latest
+    outputs:
+      changes: ${{ steps.nightly-check.outputs.changes }}
     steps:
       - id: nightly-check
-        name: Check for changes in last two days
+        name: Check for changes in the last two days
         uses: lukecarr/nightly-check@v0.2.0
         with:
           within: 48 hrs
